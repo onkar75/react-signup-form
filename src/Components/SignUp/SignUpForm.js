@@ -66,7 +66,8 @@ const SignUpForm = ({ setUserState }) => {
           <label id="firstName">First Name</label>
           <input
             type="text"
-            value={userDetails.firstName}
+            name="firstName"
+            defaultValue={userDetails.firstName}
             onChange={changeHandler}
             aria-labelledby="firstName"
           />
@@ -76,8 +77,9 @@ const SignUpForm = ({ setUserState }) => {
           <label id="lastName">Last Name</label>
           <input
             type="text"
+            name="lastName"
             aria-labelledby="lastName"
-            value={userDetails.lastName}
+            defaultValue={userDetails.lastName}
             onChange={changeHandler}
           />
           <p className="error">{formErrors.lastName}</p>
@@ -86,8 +88,9 @@ const SignUpForm = ({ setUserState }) => {
           <label id="email">Email</label>
           <input
             type="email"
+            name="email"
             aria-labelledby="email"
-            value={userDetails.email}
+            defaultValue={userDetails.email}
             onChange={changeHandler}
           />
           <p className="error">{formErrors.email}</p>
@@ -96,8 +99,9 @@ const SignUpForm = ({ setUserState }) => {
           <label id="password">Password</label>
           <input
             type="password"
+            name="password"
             aria-labelledby="password"
-            value={userDetails.password}
+            defaultValue={userDetails.password}
             onChange={changeHandler}
           />
           <p className="error">{formErrors.password}</p>

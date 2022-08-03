@@ -3,7 +3,7 @@ export const validateForm = (values) => {
 
   const emailRegex = /^[^\s+@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
-  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.{8,})$/;
+  const passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z]).{8,}$/;
 
   if (!values.firstName) {
     error.firstName = "First name is required";
